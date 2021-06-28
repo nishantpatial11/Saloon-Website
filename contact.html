@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-1">
+        <img src="images/man.png" alt="" class="logo">
+        <div class="box">
+            <h1 class="para">Visit Shop Today</h1>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="left">
+
+            <h3>Opening Hours</h3>
+            <img src="images/clock.png" alt="">
+            <p>Monday To Friday - 9am to 9pm </p>
+            <img src="images/clock.png" alt="">
+            <p>Monday To Friday - 8am to 9pm</p>
+        </div>
+        <div class="right">
+            <h3>Get In Touch</h3>
+            <img src="./images/pin.png" alt="">
+            <p>#50 abc Colony abc Vihar in </p>
+            <img src="./images/telegram.png" alt="">
+            <p>nishant@gmail.com</p>
+            <img src="./images/twitter.png" alt="">
+            <p>12332234</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-img">
+            <img src="images/facebook.png" alt="">
+            <img src="images/instagram.png" alt="">
+            <img src="images/twitter.png" alt="">
+            <img src="images/youtube.png" alt="">
+        </div>
+        <div class="para">
+            <p>copyright &copy; nishant </p>
+        </div>
+
+    </div>
+
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="feature.html">FEATURES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT-US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img id="menu" src="images/menu.png" alt="">
+    </div>
+
+
+    <!-- *****************JS************** -->
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("menu");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0px"
+                menu.src = "images/close.png"
+            }
+            else {
+                sideNav.style.right = "-250px"
+                menu.src = "images/menu.png"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
